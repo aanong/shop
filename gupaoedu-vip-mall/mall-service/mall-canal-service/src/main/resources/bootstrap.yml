@@ -7,15 +7,15 @@ spring:
     nacos:
       config:
         file-extension: yaml
-        server-addr: 192.168.100.130:8848
+        server-addr: 39.99.238.143:8848
       discovery:
         #Nacos的注册地址
-        server-addr: 192.168.100.130:8848
+        server-addr: 39.99.238.143:8848
   main:
     allow-bean-definition-overriding: true
 #Canal配置
 canal:
-  server: 192.168.100.130:11111
+  server: 39.99.238.143:11111
   destination: example
 #日志配置
 logging:
@@ -26,9 +26,9 @@ logging:
 
 elaticjob:
   zookeeper:
-    server-lists: 127.0.0.1:2181
+    server-lists: 39.99.238.143:2181
     namespace: synctask
 
 #动态定时任务案例
-dynamiczk: 127.0.0.1:2181
+dynamiczk: 39.99.238.143:2181
 dynamicnamespace: dynamictask

@@ -7,10 +7,10 @@ spring:
     nacos:
       config:
         file-extension: yaml
-        server-addr: 192.168.5.132:30049
+        server-addr: 39.99.238.143:8848
       discovery:
         #Nacos的注册地址
-        server-addr: 192.168.5.132:30049
+        server-addr: 39.99.238.143:8848
     gateway:
       routes:
         #秒杀
@@ -21,12 +21,12 @@ spring:
           filters:
             - StripPrefix=1
   redis:
-    host: 192.168.5.132
-    port: 30049
-    password: $NMQ#vqc
+    host: 192.168.5.253
+    port: 6379
+    password: Clq@2025
 #producer
 rocketmq:
-  name-server: 192.168.100.130:9876
+  name-server: 192.168.5.253:9876
   producer:
     group: hotorder-group
     send-message-timeout: 300000
